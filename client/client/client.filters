@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Interface">
+      <UniqueIdentifier>{5a67c16b-b6b5-44a4-a080-c3ba9598cc6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Networking">
+      <UniqueIdentifier>{99c0c989-dd84-4986-82b4-0eac1fada09b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Security">
+      <UniqueIdentifier>{3d729eea-6873-4a6a-8ed6-803945ecffbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Security\Encrypt">
+      <UniqueIdentifier>{8a370a7c-2259-4cac-a29b-9b49764a5122}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Security\HWID">
+      <UniqueIdentifier>{e79308e8-ffca-4744-a3f3-94fb06360b9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Interface\Login">
+      <UniqueIdentifier>{b143c6ee-04fa-496b-ab43-385b13ae2b81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Interface\Wait">
+      <UniqueIdentifier>{c05480a1-dcf2-4119-949d-c8253373090f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Interface\Main">
+      <UniqueIdentifier>{ae3e3c47-68d5-42b5-92ab-606bdd10d4aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Interface\WinAPI">
+      <UniqueIdentifier>{4d4171b4-5122-4f9c-a5d2-48776f117ff6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Utils">
+      <UniqueIdentifier>{7b6a1790-b534-4e4a-a3c0-7d7d373ae365}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Interface\Info">
+      <UniqueIdentifier>{ebb6d8be-ecb1-43e5-af6a-72c6cbed294e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Interface\Session Login">
+      <UniqueIdentifier>{c264cca5-4fa4-4f27-9cef-1a338d467109}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\thirdparty">
+      <UniqueIdentifier>{2256da1c-9fd0-4ab2-b4df-0bcf6e78a1fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\thirdparty\wmi">
+      <UniqueIdentifier>{0facd7cf-350c-4dfe-8e57-a32b8c6cc788}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\thirdparty\wmi\inc">
+      <UniqueIdentifier>{912e8209-a7e9-4983-8e97-66c42450ade5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Events">
+      <UniqueIdentifier>{8379f230-20db-44cb-a6e0-7b40e1e108a6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="WinMain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Security\HWID\HWID.cpp">
+      <Filter>Header Files\Security\HWID</Filter>
+    </ClCompile>
+    <ClCompile Include="Security\Encryption\Encryption.cpp">
+      <Filter>Header Files\Security\Encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\Routines.cpp">
+      <Filter>Header Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\Main\MainDlg.cpp">
+      <Filter>Header Files\Interface\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\Login\LoginDlg.cpp">
+      <Filter>Header Files\Interface\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\Wait\WaitDlg.cpp">
+      <Filter>Header Files\Interface\Wait</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\Info\InfoDlg.cpp">
+      <Filter>Header Files\Interface\Info</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\SessionLogin\SessionLoginDlg.cpp">
+      <Filter>Header Files\Interface\Session Login</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\wmi\src\wmi.cpp">
+      <Filter>Header Files\thirdparty\wmi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\wmi\src\wmiresult.cpp">
+      <Filter>Header Files\thirdparty\wmi</Filter>
+    </ClCompile>
+    <ClCompile Include="Networking\WebSocketClient.cpp">
+      <Filter>Header Files\Networking</Filter>
+    </ClCompile>
+    <ClCompile Include="Networking\MessageHandlers.cpp">
+      <Filter>Header Files\Networking</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\EventManager.cpp">
+      <Filter>Header Files\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Security\HWID\HWID.h">
+      <Filter>Header Files\Security\HWID</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\Encryption\Encryption.h">
+      <Filter>Header Files\Security\Encrypt</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\WinAPI\Button.hpp">
+      <Filter>Header Files\Interface\WinAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\WinAPI\Control.hpp">
+      <Filter>Header Files\Interface\WinAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\WinAPI\Dialog.hpp">
+      <Filter>Header Files\Interface\WinAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\WinAPI\EditBox.hpp">
+      <Filter>Header Files\Interface\WinAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\WinAPI\ListView.hpp">
+      <Filter>Header Files\Interface\WinAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\WinAPI\Message.hpp">
+      <Filter>Header Files\Interface\WinAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\WinAPI\ProgressBar.hpp">
+      <Filter>Header Files\Interface\WinAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\WinAPI\Static.hpp">
+      <Filter>Header Files\Interface\WinAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\WinAPI\StatusBar.hpp">
+      <Filter>Header Files\Interface\WinAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\WinAPI\Thunk.hpp">
+      <Filter>Header Files\Interface\WinAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\WinAPI\Window.hpp">
+      <Filter>Header Files\Interface\WinAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\Main\MainDlg.h">
+      <Filter>Header Files\Interface\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\Login\LoginDlg.h">
+      <Filter>Header Files\Interface\Login</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\Wait\WaitDlg.h">
+      <Filter>Header Files\Interface\Wait</Filter>
+    </ClInclude>
+    <ClInclude Include="Resources\Resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\WinAPI\RichEditControl.hpp">
+      <Filter>Header Files\Interface\WinAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.hpp">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\Info\InfoDlg.h">
+      <Filter>Header Files\Interface\Info</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\WinAPI\CheckBox.hpp">
+      <Filter>Header Files\Interface\WinAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\SessionLogin\SessionLoginDlg.h">
+      <Filter>Header Files\Interface\Session Login</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInfo.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\wmi\include\unistd.h">
+      <Filter>Header Files\thirdparty\wmi\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\wmi\include\wmi.hpp">
+      <Filter>Header Files\thirdparty\wmi\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\wmi\include\wmiclasses.hpp">
+      <Filter>Header Files\thirdparty\wmi\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\wmi\include\wmiexception.hpp">
+      <Filter>Header Files\thirdparty\wmi\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\wmi\include\wmiresult.hpp">
+      <Filter>Header Files\thirdparty\wmi\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Networking\WebSocketClient.hpp">
+      <Filter>Header Files\Networking</Filter>
+    </ClInclude>
+    <ClInclude Include="Networking\MessageHandlers.hpp">
+      <Filter>Header Files\Networking</Filter>
+    </ClInclude>
+    <ClInclude Include="Win32Event.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowManager.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Events\EventManager.hpp">
+      <Filter>Header Files\Events</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resources\Resource.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Resource.aps">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="WinMain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\wmi\src\wmi.cpp">
+      <Filter>Include Files\thirdparty\wmi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\wmi\src\wmiresult.cpp">
+      <Filter>Include Files\thirdparty\wmi</Filter>
+    </ClCompile>
+    <ClCompile Include="Networking\WebSocketClient.cpp">
+      <Filter>Include Files\Networking</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\Login\LoginDlg.cpp">
+      <Filter>Include Files\Interface\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\Main\MainDlg.cpp">
+      <Filter>Include Files\Interface\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\EventManager.cpp">
+      <Filter>Include Files\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils.cpp">
+      <Filter>Include Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Security\Encryption.cpp">
+      <Filter>Include Files\Security</Filter>
+    </ClCompile>
+    <ClCompile Include="Security\HardwareInfo.cpp">
+      <Filter>Include Files\Security</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resources\Resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\wmi\include\wmi.hpp">
+      <Filter>Include Files\thirdparty\wmi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\wmi\include\wmiclasses.hpp">
+      <Filter>Include Files\thirdparty\wmi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\wmi\include\wmiexception.hpp">
+      <Filter>Include Files\thirdparty\wmi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\wmi\include\wmiresult.hpp">
+      <Filter>Include Files\thirdparty\wmi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\json\nlohmann\json.hpp">
+      <Filter>Include Files\thirdparty\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\wmi\include\unistd.h">
+      <Filter>Include Files\thirdparty\wmi</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\Login\LoginDlg.h">
+      <Filter>Include Files\Interface\Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\Main\MainDlg.h">
+      <Filter>Include Files\Interface\Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\WinAPI\Button.hpp">
+      <Filter>Include Files\Interface\WinAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\WinAPI\CheckBox.hpp">
+      <Filter>Include Files\Interface\WinAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\WinAPI\Control.hpp">
+      <Filter>Include Files\Interface\WinAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\WinAPI\Dialog.hpp">
+      <Filter>Include Files\Interface\WinAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\WinAPI\EditBox.hpp">
+      <Filter>Include Files\Interface\WinAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\WinAPI\ListView.hpp">
+      <Filter>Include Files\Interface\WinAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\WinAPI\Message.hpp">
+      <Filter>Include Files\Interface\WinAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\WinAPI\ProgressBar.hpp">
+      <Filter>Include Files\Interface\WinAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\WinAPI\RichEditControl.hpp">
+      <Filter>Include Files\Interface\WinAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\WinAPI\Static.hpp">
+      <Filter>Include Files\Interface\WinAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\WinAPI\StatusBar.hpp">
+      <Filter>Include Files\Interface\WinAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\WinAPI\Thunk.hpp">
+      <Filter>Include Files\Interface\WinAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\WinAPI\Window.hpp">
+      <Filter>Include Files\Interface\WinAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="Networking\WebSocketClient.hpp">
+      <Filter>Include Files\Networking</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowManager.hpp">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInfo.hpp">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Networking\MessageHandlers.hpp">
+      <Filter>Include Files\Networking</Filter>
+    </ClInclude>
+    <ClInclude Include="Events\EventManager.hpp">
+      <Filter>Include Files\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes.hpp">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.hpp">
+      <Filter>Include Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\Encryption.h">
+      <Filter>Include Files\Security</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\HardwareInfo.h">
+      <Filter>Include Files\Security</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Include Files">
+      <UniqueIdentifier>{da6d0370-437d-4604-9269-aefba8698f75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{b48adb1c-6495-4074-aa12-5fa3835e8b4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{2c9c932d-927c-4ec6-8dc9-8d5081d1f43e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include Files\thirdparty">
+      <UniqueIdentifier>{994946fd-2ec2-4aa5-9fe3-ae830cf81bdc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include Files\Interface">
+      <UniqueIdentifier>{71f351df-4e71-41fb-9f1e-bd2d6262e2dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include Files\thirdparty\wmi">
+      <UniqueIdentifier>{30e7616c-1140-46e1-9e21-9c2b619d0968}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include Files\thirdparty\json">
+      <UniqueIdentifier>{d98dbf7b-6aa1-4958-b182-b01873bee546}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include Files\Interface\Dialogs">
+      <UniqueIdentifier>{ffb6c24b-c0f2-49d8-b422-904de382f873}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include Files\Interface\WinAPI">
+      <UniqueIdentifier>{25ad0f53-b72c-4940-8876-9af78eb213de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include Files\Networking">
+      <UniqueIdentifier>{848fd1c6-f061-4b7d-bd18-ac0175115c4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include Files\Events">
+      <UniqueIdentifier>{73145837-580d-4970-b586-93173c1314f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include Files\Security">
+      <UniqueIdentifier>{d6960456-fd80-491a-ae84-55523686a8aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include Files\Utils">
+      <UniqueIdentifier>{cd37ea16-c586-4648-a843-239ee7364da1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Resource.aps">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resources\Resource.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

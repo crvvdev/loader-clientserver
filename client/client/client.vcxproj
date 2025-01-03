@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{06885946-e5e7-4f2a-9dc0-6f2127508ef3}</ProjectGuid>
+    <RootNamespace>client</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>..\bin\$(Configuration)\</OutDir>
+    <IntDir>intermediate\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>..\bin\$(Configuration)\</OutDir>
+    <IntDir>intermediate\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32_LEAN_AND_MEAN;ASIO_STANDALONE;_WEBSOCKETPP_CPP11_RANDOM_DEVICE_;_WEBSOCKETPP_CPP11_TYPE_TRAITS_;VERBOSE_LOG;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>..\thirdparty\json;..\thirdparty\wmi\include;..\thirdparty\openssl\include;..\thirdparty\asio-1.30.2\include;..\thirdparty\websocketpp;..\thirdparty\scope_guard\include</AdditionalIncludeDirectories>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>DebugFastLink</GenerateDebugInformation>
+      <AdditionalDependencies>comctl32.lib;wbemuuid.lib;Shlwapi.lib;libcrypto.lib;libssl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\thirdparty\openssl\lib\dbg;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32_LEAN_AND_MEAN;ASIO_STANDALONE;_WEBSOCKETPP_CPP11_RANDOM_DEVICE_;_WEBSOCKETPP_CPP11_TYPE_TRAITS_;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>..\thirdparty\json;..\thirdparty\wmi\include;..\thirdparty\openssl\include;..\thirdparty\asio-1.30.2\include;..\thirdparty\websocketpp;..\thirdparty\scope_guard\include</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>comctl32.lib;wbemuuid.lib;Shlwapi.lib;crypt32.lib;libcrypto.lib;libssl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\thirdparty\openssl\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\thirdparty\wmi\src\wmi.cpp" />
+    <ClCompile Include="..\thirdparty\wmi\src\wmiresult.cpp" />
+    <ClCompile Include="Events\EventManager.cpp" />
+    <ClCompile Include="Interface\Login\LoginDlg.cpp" />
+    <ClCompile Include="Interface\Main\MainDlg.cpp" />
+    <ClCompile Include="Networking\WebSocketClient.cpp" />
+    <ClCompile Include="Security\Encryption.cpp" />
+    <ClCompile Include="Security\HardwareInfo.cpp" />
+    <ClCompile Include="Utils.cpp" />
+    <ClCompile Include="WinMain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\thirdparty\json\nlohmann\json.hpp" />
+    <ClInclude Include="..\thirdparty\wmi\include\unistd.h" />
+    <ClInclude Include="..\thirdparty\wmi\include\wmi.hpp" />
+    <ClInclude Include="..\thirdparty\wmi\include\wmiclasses.hpp" />
+    <ClInclude Include="..\thirdparty\wmi\include\wmiexception.hpp" />
+    <ClInclude Include="..\thirdparty\wmi\include\wmiresult.hpp" />
+    <ClInclude Include="Events\EventManager.hpp" />
+    <ClInclude Include="Interface\Login\LoginDlg.h" />
+    <ClInclude Include="Interface\Main\MainDlg.h" />
+    <ClInclude Include="Interface\WinAPI\Button.hpp" />
+    <ClInclude Include="Interface\WinAPI\CheckBox.hpp" />
+    <ClInclude Include="Interface\WinAPI\Control.hpp" />
+    <ClInclude Include="Interface\WinAPI\Dialog.hpp" />
+    <ClInclude Include="Interface\WinAPI\EditBox.hpp" />
+    <ClInclude Include="Interface\WinAPI\ListView.hpp" />
+    <ClInclude Include="Interface\WinAPI\Message.hpp" />
+    <ClInclude Include="Interface\WinAPI\ProgressBar.hpp" />
+    <ClInclude Include="Interface\WinAPI\RichEditControl.hpp" />
+    <ClInclude Include="Interface\WinAPI\Static.hpp" />
+    <ClInclude Include="Interface\WinAPI\StatusBar.hpp" />
+    <ClInclude Include="Interface\WinAPI\Thunk.hpp" />
+    <ClInclude Include="Interface\WinAPI\Window.hpp" />
+    <ClInclude Include="Networking\WebSocketClient.hpp" />
+    <ClInclude Include="Networking\MessageHandlers.hpp" />
+    <ClInclude Include="Resources\Resource.h" />
+    <ClInclude Include="Includes.hpp" />
+    <ClInclude Include="Security\Encryption.h" />
+    <ClInclude Include="Security\HardwareInfo.h" />
+    <ClInclude Include="UserInfo.hpp" />
+    <ClInclude Include="Utils.hpp" />
+    <ClInclude Include="WindowManager.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Resource.aps" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resources\Resource.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
