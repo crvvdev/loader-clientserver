@@ -1,3 +1,4 @@
+
 # Loader project
 
 Hello, this is a project that i was working on some time ago, as i am not going to use it anytime soon i decided to publish it for free, it's missing some core functionality like streaming "cheats" and some other relevant needed stuff. Anyways, it's a good example and it's helpful to show how to do things in the right tracks.
@@ -10,8 +11,8 @@ It's coded in C++ and it has a graphical interface using Win32 GUI.
  - Metadata gathering (general computer information such as GPU, CPU, OS, Motherboard, Disk drives, Network adapters and some other fingerprints methods)
  - Websocket client connection with server
  - Basic graphical user interface for login and user panel
- - VMProtect ready
- - Libraries used: websocketpp, OpenSSL 3.0, JSON for modern C++, scopeguard, ASIO
+ - [VMProtect](https://vmpsoft.com/) ready
+ - Libraries used: [websocketpp](https://github.com/zaphoyd/websocketpp), [OpenSSL 3.0](https://github.com/openssl/openssl/releases/tag/openssl-3.4.0), [JSON for modern C++](https://github.com/nlohmann/json), [scope_guard](https://github.com/Neargye/scope_guard), [ASIO](https://github.com/boostorg/asio)
 
 ## Server
 
